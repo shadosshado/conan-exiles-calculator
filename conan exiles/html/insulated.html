@@ -1,0 +1,68 @@
+<style>
+.flex-container {
+  display: flex;
+  background-color: ;
+}
+
+.flex-container > div {
+  background-color: ;
+  margin: 10px;
+  padding: 20px;
+  font-size: 25px;
+}
+</style>
+<body>
+
+<div class="flex-container">
+    <div><button><a href="./index.html">main menu</a></button></div>
+</div>
+
+<style>
+.button {
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.nice {border-radius: 8px;}
+</style>
+<center>
+<button onclick="IF()" class="button nice">inuslated wooden foundation</button>
+<p id="if"></p>
+<script> 
+function IF(){
+var ui = prompt("how much do you want to craft?");
+var iwood =  ui*4 ;
+var ir = ui*7;
+ document.getElementById("if").innerHTML = "you need "+iwood+" insulated wood "+ir+" iron reinforcment in order to craft "+ui+" insulated wooden  foundtation";
+}
+</script>
+</center>
+<center>
+<button onclick="IW()"class="button nice">insulated wood wall</button>
+<p id="iw"></p>
+<script>
+function IW(){
+var ui = prompt("how much do you want to craft")
+var iwood = ui * 2;
+var ir = ui * 4;
+ document.getElementById("iw").innerHTML ="you need "+iwood+" insulated  wood "+ir+" iron reinforcment in order to craft "+ui+" insulated wooden wall";
+}
+</script>
+</center><center>
+<button onclick="IC()"class="button nice">insulated wooden  celling</button>
+<p id="ic"></p>
+<script>
+function IC(){
+var ui = prompt("how much do you want to craft")
+var iwood = ui * 3;
+var ir =ui*5;
+ document.getElementById("ic").innerHTML = "you need "+iwood+" insulated wood "+ir+" iron reinforcment in order to craft "+ui+"   insulated wooden celling";
+
+}
+</script>

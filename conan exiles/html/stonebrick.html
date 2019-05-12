@@ -1,0 +1,71 @@
+<style>
+.flex-container {
+  display: flex;
+  background-color: ;
+}
+
+.flex-container > div {
+  background-color: ;
+  margin: 10px;
+  padding: 20px;
+  font-size: 25px;
+}
+</style>
+<body>
+
+<div class="flex-container">
+    <div><button><a href="./stonebrick.html">main menu</a></button></div>
+</div>
+
+<style>
+.button {
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.nice {border-radius: 8px;}
+</style>
+<center>
+<button onclick="BF()" class="button nice">brick stone foundation</button>
+<p id="bf"></p>
+<script> 
+function BF(){
+var ui = prompt("how much do you want to craft?");
+var rwood =  ui*4 ;
+var brick = ui*10;
+var ir = ui*7;
+ document.getElementById("bf").innerHTML = "you need "+rwood+" rienforced wood "+ir+" iron reinforcment "+brick+" brick in order to craft "+ui+" stonebrick foundtation";
+}
+</script>
+</center>
+<center>
+<button onclick="BW()"class="button nice">brick stone wall</button>
+<p id="bw"></p>
+<script>
+function BW(){
+var ui = prompt("how much do you want to craft")
+var rwood = ui * 3;
+var brick = ui * 5;
+var ir = ui * 4;
+ document.getElementById("bw").innerHTML ="you need "+rwood+" rienforced wood "+ir+" iron reinforcment "+brick+" brick in order to craft "+ui+" stonebrick wall";
+}
+</script>
+</center><center>
+<button onclick="BC()"class="button nice">brick stone celling</button>
+<p id="bc"></p>
+<script>
+function BC(){
+var ui = prompt("how much do you want to craft")
+var rwood = ui * 3;
+var brick =ui * 6;
+var ir =ui*5;
+ document.getElementById("bc").innerHTML = "you need "+rwood+" rienforced wood "+ir+" iron reinforcment "+brick+" brick in order to craft "+ui+" stonebrick cel";
+
+}
+</script>

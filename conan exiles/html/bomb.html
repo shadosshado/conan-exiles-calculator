@@ -1,0 +1,85 @@
+<style>
+.flex-container {
+  display: flex;
+  background-color: ;
+}
+
+.flex-container > div {
+  background-color: ;
+  margin: 10px;
+  padding: 20px;
+  font-size: 25px;
+}
+</style>
+<body>
+
+<div class="flex-container">
+    <div><button><a href="./index.html">main menu</a></button></div>
+</div>
+
+<style>
+.button {
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.nice {border-radius: 8px;}
+</style>
+<style>
+body {
+   background-color: #8B4513;
+}
+</style><center>
+<img src=/images/jar.png>
+</center>
+<script>
+var DemonB;
+var stelefire;
+var DragonB;
+</script>
+
+
+
+<center>
+<button onclick="rm()" class="button nice">raw materilas</button>
+<p id="RM"></p>
+<script>
+function rm() {
+ var tb  = prompt("how many bombs do you want to make");
+var BS = tb * 110;
+var crystal = tb * 50;
+var stone = tb * 50;
+var DemonB = tb * 2;
+var tar = tb * 205;
+var Jugs = tb * 1;
+
+    
+ document.getElementById("RM").innerHTML ="you need " +BS+" brimestone "+crystal+ " crystal "+ stone+ " stone "+DemonB+" demon blood "+tar+" tar in order to make "+tb+" bombs";
+}
+</script>
+</center>
+<center>
+<button onclick="fp()" class="button nice">finished products</button>
+<p id="FP"></p>
+<script> 
+function fp() {
+ var tb  = prompt("how many bombs do you want to make");
+
+    var BS = tb * 110;
+var crystal = tb * 50;
+var stone = tb * 50;
+var DemonB = tb * 2;
+var tar = tb * 5;
+var Jugs = tb * 1;
+
+
+    document.getElementById("FP").innerHTML ="you need "+tb+" dragon powder "+tar+" tar "+Jugs+ " earthware jugs in order to make "+tb+" bombs";
+}
+</script>
+</center>

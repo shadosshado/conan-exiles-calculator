@@ -1,0 +1,73 @@
+<style>
+.flex-container {
+  display: flex;
+  background-color: ;
+}
+
+.flex-container > div {
+  background-color: ;
+  margin: 10px;
+  padding: 20px;
+  font-size: 25px;
+}
+</style><!-- thing for the main menu box -->
+<body>
+
+<div class="flex-container">
+  <div><button>main menu</button></div>
+</div>
+
+<style>
+.button {
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.nice {border-radius: 8px;}
+</style><!-- css for the main menu -->
+<!-- some basic css that gives it a little bit of not dog doodoo-->
+<center>
+<button onclick="BIF()" class="button nice">black ice foundation</button><!-- first button that sends a signal-->
+<p id="bif"></p><!-- this is were the information is going to be writen in the <script>tag-->
+<script> 
+function BIF(){// our function that will start evrething
+var ui = prompt("how much do you want to craft?");//with the answer the computer does some math wich we will get in to later
+var iwood =  ui*4 ;
+var sr = ui*3;
+var bi = ui*5;// this are the math calculations the computer runs with the var ui wich then we get our total answer.
+ document.getElementById("bif").innerHTML = "you need "+iwood+" insulated wood "+bi+" black ice "+sr+" steel reinforcment in order to craft "+ui+" black ice foundtation";//with these it will display it in the <p id"bif"> thise are one of the ways you can output informatuon in javascript, other ways include alert() and console.log(t)
+}
+//it just loops after this no need to comment the code after this-
+</script>
+</center>
+<center>
+<button onclick="BIW()"class="button nice">black ice wall</button>
+<p id="biw"></p>
+<script>
+function BIW(){
+var ui = prompt("how much do you want to craft")// ask us how much we want to craft
+var iwood = ui * 2;
+var sr = ui * 2;
+var bi = ui * 3;//these are the variales that get multiplied by 1
+ document.getElementById("biw").innerHTML ="you need "+iwood+" insulated  wood "+bi+" black ice "+sr+" steel reinforcment in order to craft "+ui+" black ice wall";// this displayes onto the paragrpah 
+}
+</script>
+</center><center>
+<button onclick="BIC()"class="button nice">black ice  celling</button>
+<p id="bic"></p>
+<script>
+function BIC(){
+var ui = prompt("how much do you want to craft")
+var iwood = ui * 3;
+var sr =ui*2;
+var bi = ui * 3;//what to multiply by
+ document.getElementById("bic").innerHTML = "you need "+iwood+" insulated wood "+bi+" black ice "+sr+" steel reinforcment in order to craft "+ui+" black ice celling";
+
+}
+</script>

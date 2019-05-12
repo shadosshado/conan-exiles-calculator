@@ -1,0 +1,71 @@
+<style>
+.flex-container {
+  display: flex;
+  background-color: ;
+}
+
+.flex-container > div {
+  background-color: ;
+  margin: 10px;
+  padding: 20px;
+  font-size: 25px;
+}
+</style>
+<body>
+
+<div class="flex-container">
+  <div><button>main menu</button></div>
+</div>
+
+<style>
+.button {
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.nice {border-radius: 8px;}
+</style>
+<center>
+<button onclick="RSF()" class="button nice">reinfroced stone foundation</button>
+<p id="rsf"></p>
+<script> 
+function RSF(){
+var ui = prompt("how much do you want to craft?");
+var sw =  ui*4 ;
+var sr = ui*3;
+var hb = ui*15;
+ document.getElementById("rsf").innerHTML = "you need "+sw+" shaped wood "+hb+" hardened brick "+sr+" steel reinforcment in order to craft "+ui+" reinforced stone foundtation";
+}
+</script>
+</center>
+<center>
+<button onclick="RSW()"class="button nice">reinfroced stone  wall</button>
+<p id="rsw"></p>
+<script>
+function RSW(){
+var ui = prompt("how much do you want to craft")// ask the user  how much we want to craft
+var swood = ui * 2;
+var sr = ui * 2;
+var hb = ui * 8;//these are the variales that get multiplied by 1
+ document.getElementById("rsw").innerHTML ="you need "+swood+" shaped  wood "+hb+" hardend brick "+sr+" steel reinforcment in order to craft "+ui+" stone reinfroced wall";// this displayes onto the paragrpah 
+}
+</script>
+</center><center>
+<button onclick="RSC()"class="button nice">reinforced stone celling</button>
+<p id="rsc"></p>
+<script>
+function RSC(){
+var ui = prompt("how much do you want to craft")
+var swood = ui * 3;
+var sr =ui*2;
+var hb = ui * 9;//what to multiply by
+ document.getElementById("rsc").innerHTML = "you need "+swood+" shaped wood "+hb+" hardend brick "+sr+" steel reinforcment in order to craft "+ui+" reinfroced stone celling";
+
+}
+</script>

@@ -1,0 +1,77 @@
+<style>
+.flex-container {
+  display: flex;
+  background-color: ;
+}
+
+.flex-container > div {
+  background-color: ;
+  margin: 10px;
+  padding: 20px;
+  font-size: 25px;
+}
+</style>
+<body>
+
+<div class="flex-container">
+    <div><button><a href="./index.html">main menu</a></button></div>
+</div>
+
+<style>
+.button {
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.nice {border-radius: 8px;}
+</style>
+
+<style>
+body {
+   background-color: #8B4513;
+}
+</style>
+
+<center><button onclick="SF()" class="button nice">sandstone foundation</button>
+<p id="sf"></p>
+
+  <script>
+    function SF() {
+var ui =prompt("how much do you want to craft?")
+var wood = 5 * ui;
+var stone = 35 * ui;
+document.getElementById("sf").innerHTML =("you need "+wood+" wood "+stone+" stone in order to craft "+ui+" sandstone foundation");
+    }
+  </script>
+  
+<button onclick="SW()" class="button nice">sandstone wall</button>
+<p id="sw"></p>
+
+  <script>
+    function SW() {
+var ui =prompt("how much do you want to craft?")
+var wood = 3 * ui;
+var stone = 18 * ui;
+document.getElementById("sw").innerHTML =("you need "+wood+" wood "+stone+" stone in order to craft "+ui+" sandstone wall");
+    }
+  </script>
+</center>
+<center><button onclick="SC()" class="button nice">sandstone celing</button>
+<p id ="sc"></p>
+ <script>
+ function SC()  {
+ var ui =prompt("how much do you want to craft?")
+ var wood = 3 * ui;
+ var stone = 21 * ui;
+ document.getElementById("sc").innerHTML =("you need "+wood+" wood "+stone+" stone in order to craft "+ui+" sandstone ceiling");
+ }
+ </script>  
+
+
+
